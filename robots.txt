@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iker445.github.io/sitemap.xml

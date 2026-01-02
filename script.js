@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const minutes = Math.round((timeToZero - hours) * 60);
 
         if (timeToZero > 0) {
-            timeToSoberDisplay.textContent = `Tiempo estimada para 0.00%: ${hours}h ${minutes}min`;
+            timeToSoberDisplay.innerHTML = `Tiempo estimado para 0.00% <span class="tooltip-icon" data-tooltip="Tasa eliminación 0.015%/h (Widmark)">?</span>: <strong>${hours}h ${minutes}min</strong>`;
         } else {
             timeToSoberDisplay.textContent = 'Estás sobrio (estimado)';
         }
@@ -192,3 +192,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Preloader & Lazy Load AdSense
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }
+});
+
+let adsLoaded = false;
+function loadAdSense() {
+    if (adsLoaded) return;
+    adsLoaded = true;
+
+    // Google AdSense
+    const script = document.createElement('script');
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1333003737714758";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+    console.log('AdSense script loaded lazily.');
+}
+
+// Triggers
+window.addEventListener('scroll', loadAdSense, { passive: true });
+window.addEventListener('mousemove', loadAdSense, { passive: true });
+window.addEventListener('touchstart', loadAdSense, { passive: true });
+setTimeout(loadAdSense, 3000); // Fallback

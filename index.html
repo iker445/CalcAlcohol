@@ -15,50 +15,91 @@
 <!-- CSS -->
 <link rel="stylesheet" href="styles.css?v=2">
 
-<!-- Structured Data for Rich Snippets (SoftwareApplication) -->
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Calculadora de Alcohol en Sangre",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "Web",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR"
-      },
-      "description": "Calculadora online gratuita para estimar el nivel de alcohol en sangre (BAC) y el tiempo de recuperación."
-    }
-    </script>
+<!-- Canonical -->
+<link rel="canonical" href="https://iker445.github.io/">
 
-<!-- Structured Data for FAQ -->
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iker445.github.io/">
+<meta property="og:title" content="Calculadora de Alcohol (BAC): ¿Cuánto tarda en irse?">
+<meta property="og:description"
+    content="Calculadora científica Widmark. Averigua tu tasa de alcohol y cuándo podrás conducir. Gratis y sin registro.">
+<meta property="og:image" content="https://iker445.github.io/social-preview.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Calculadora de Alcohol (BAC): ¿Cuánto tarda en irse?">
+<meta property="twitter:description"
+    content="Calculadora científica Widmark. Averigua tu tasa de alcohol y cuándo podrás conducir.">
+
+<!-- Structured Data for Rich Snippets (SoftwareApplication + PotentialAction) -->
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "¿Cuánto tarda en irse el alcohol del cuerpo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "El alcohol se elimina a una tasa constante de aproximadamente 0.015% de BAC por hora. Por ejemplo, una copa de vino tarda aproximadamente 1 hora y media en eliminarse completamente."
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Calculadora de Alcohol en Sangre",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Web",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+          },
+          "description": "Calculadora online gratuita para estimar el nivel de alcohol en sangre (BAC) y el tiempo de recuperación.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://iker445.github.io/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "HowTo",
+          "name": "Cómo calcular tu tasa de alcoholemia",
+          "description": "Pasos para estimar tu nivel de alcohol en sangre usando la fórmula Widmark.",
+          "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "EUR",
+            "value": "0"
+          },
+          "totalTime": "PT1M",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "text": "Introduce tu sexo y peso corporal en la calculadora."
+            },
+            {
+              "@type": "HowToStep",
+              "text": "Añade las bebidas que has consumido (cerveza, vino, licor)."
+            },
+            {
+              "@type": "HowToStep",
+              "text": "Indica el tiempo transcurrido desde la primera copa."
+            },
+            {
+              "@type": "HowToStep",
+              "text": "Pulsa 'Calculadora BAC' para ver el resultado y tiempo de recuperación."
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "¿Cuánto tarda en eliminarse el alcohol del cuerpo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El alcohol se elimina a una tasa constante de 0.015% BAC por hora (aprox. 1 hora por copa estándar). Ni el café ni la ducha aceleran este proceso."
+            }
+          }, {
+            "@type": "Question",
+            "name": "¿Cuál es la tasa de alcohol permitida para conductores noveles 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En España, la tasa para noveles y profesionales se mantiene en 0.15 mg/l en aire espirado (0.3 g/l en sangre)."
+            }
+          }]
         }
-      }, {
-        "@type": "Question",
-        "name": "¿Beber café ayuda a bajar el alcohol?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. El café solo reduce la sensación de sueño, pero no acelera el metabolismo del hígado. Seguirás dando positivo en un control de alcoholemia."
-        }
-      }, {
-        "@type": "Question",
-        "name": "¿Cuál es el límite legal de alcoholemia en España?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "0.5 g/l en sangre (0.25 mg/l en aire) para conductores generales y 0.3 g/l (0.15 mg/l) para noveles y profesionales."
-        }
-      }]
+      ]
     }
     </script>
 
@@ -72,13 +113,13 @@
     gtag('config', 'G-ME62C841B5');
 </script>
 
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1333003737714758"
-    crossorigin="anonymous"></script>
-
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
 
     <header>
         <div class="container nav-wrapper">
