@@ -382,15 +382,11 @@ th {
 
 /* Ads */
 .ad-slot {
-    background-color: #f1f5f9;
     min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #94a3b8;
     margin: 2rem 0;
-    border-radius: var(--border-radius);
-    border: 2px dashed #cbd5e1;
 }
 
 /* Footer */
