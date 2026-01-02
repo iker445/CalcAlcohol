@@ -229,7 +229,7 @@
         <section class="content-section">
             <div class="container article-content">
 
-                <h2>¿Cómo se calcula el nivel de alcohol en sangre (BAC)?</h2>
+                <h2 id="calculadora-info">¿Cómo se calcula el nivel de alcohol en sangre (BAC)?</h2>
                 <p>El cálculo del nivel de alcohol en sangre (BAC, <em>Blood Alcohol Content</em>) depende de variables
                     como el peso, el sexo y el tiempo. Nuestra <strong>calculadora de alcohol</strong> utiliza la
                     <strong>Fórmula de Widmark</strong>, el estándar científico más aceptado.
@@ -265,7 +265,7 @@
                     <!-- Espacio AdSense -->
                 </div>
 
-                <h2>Mitos y Verdades sobre cómo bajar la borrachera rápido</h2>
+                <h2 id="mitos">Mitos y Verdades sobre cómo bajar la borrachera rápido</h2>
                 <p>¿Es posible engañar al alcoholímetro o bajar el alcohol más rápido? La respuesta científica es NO,
                     pero analicemos los mitos más comunes:</p>
 
@@ -280,10 +280,27 @@
                 <p><strong>Falso.</strong> Comer ayuda <em>antes</em> de beber (ralentiza la absorción), pero no elimina
                     el alcohol que ya está en la sangre.</p>
 
-                <h2>Tabla de Equivalencias de Alcohol por Bebida</h2>
+                <h2 id="legal">Límites de Alcoholemia DGT 2026 (España)</h2>
+                <p>Tabla oficial de límites máximos permitidos para sanciones administrativas y penales.</p>
+
+                <div class="info-card" style="border-left-color: var(--danger-color);">
+                    <ul>
+                        <li><strong>General:</strong> 0.25 mg/l (aire) - 0.50 g/l (sangre)</li>
+                        <li><strong>Noveles y Profesionales:</strong> 0.15 mg/l (aire) - 0.30 g/l (sangre)</li>
+                        <li><strong>Menores de edad:</strong> 0.00 mg/l (Tasa Cero)</li>
+                    </ul>
+                    <p style="margin-bottom:0; margin-top:1rem;">
+                        <a href="Guia-BAC-Conduccion-2026.html" target="_blank"
+                            style="font-weight:bold; color:var(--primary-dark); text-decoration:underline;">📥 Descargar
+                            Guía Oficial de Límites y Multas 2026 (PDF)</a>
+                    </p>
+                </div>
+
+                <h2 id="tabla">Tabla de Equivalencias de Alcohol por Bebida</h2>
                 <p>Conocer la cantidad de alcohol puro en cada bebida es clave para calcular tu BAC.</p>
 
                 <table>
+                    <caption>*Datos aproximados para volúmenes estándar. Revisa la etiqueta de tu bebida.</caption>
                     <thead>
                         <tr>
                             <th>Tipo de Bebida</th>
@@ -323,40 +340,47 @@
                 <h2 id="faq">Preguntas Frecuentes (FAQ) sobre el Control de Alcoholemia</h2>
 
                 <div class="faq-item">
-                    <div class="faq-question">¿Cuál es el límite para no dar positivo en un control? <span
+                    <div class="faq-question">¿Puedo usar esta calculadora para cerveza, vino y combinados? <span
                             style="float:right">+</span></div>
                     <div class="faq-answer">
-                        En España, el límite es <strong>0.25 mg/l en aire</strong> (0.5 g/l en sangre). Con dos
-                        cervezas, una persona de peso medio ya podría rozar o superar este límite.
+                        Sí. Nuestra herramienta incluye las bebidas más comunes (cerveza 5%, vino 12%, copas 40%) y
+                        ajusta el cálculo de gramos de alcohol puro según el volumen seleccionado.
                     </div>
                 </div>
+                <div class="faq-question">¿Cuál es el límite para no dar positivo en un control? <span
+                        style="float:right">+</span></div>
+                <div class="faq-answer">
+                    En España, el límite es <strong>0.25 mg/l en aire</strong> (0.5 g/l en sangre). Con dos
+                    cervezas, una persona de peso medio ya podría rozar o superar este límite.
+                </div>
+            </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">¿Cuánto tiempo debo esperar para conducir? <span
-                            style="float:right">+</span></div>
-                    <div class="faq-answer">
-                        Si tienes un nivel de 1.0 g/l, necesitarás al menos 6-7 horas para eliminarlo por completo. La
-                        recomendación segura es: si bebes, no conduzcas hasta el día siguiente tras descansar.
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cuánto tiempo debo esperar para conducir? <span style="float:right">+</span>
                 </div>
+                <div class="faq-answer">
+                    Si tienes un nivel de 1.0 g/l, necesitarás al menos 6-7 horas para eliminarlo por completo. La
+                    recomendación segura es: si bebes, no conduzcas hasta el día siguiente tras descansar.
+                </div>
+            </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">¿Por qué las mujeres dan más positivo que los hombres? <span
-                            style="float:right">+</span></div>
-                    <div class="faq-answer">
-                        Debido a un menor volumen de agua corporal y menor concentración de la enzima alcohol
-                        deshidrogenasa en el estómago.
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Por qué las mujeres dan más positivo que los hombres? <span
+                        style="float:right">+</span></div>
+                <div class="faq-answer">
+                    Debido a un menor volumen de agua corporal y menor concentración de la enzima alcohol
+                    deshidrogenasa en el estómago.
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">¿Funciona el alcoholímetro de farmacia? <span style="float:right">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Los test desechables dan una referencia aproximada, pero tienen margen de error. No te fíes al
-                        100% para decidir si coger el coche.
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Funciona el alcoholímetro de farmacia? <span style="float:right">+</span>
                 </div>
+                <div class="faq-answer">
+                    Los test desechables dan una referencia aproximada, pero tienen margen de error. No te fíes al
+                    100% para decidir si coger el coche.
+                </div>
+            </div>
 
             </div>
         </section>
@@ -372,6 +396,7 @@
                 <div class="footer-links">
                     <h4>Enlaces</h4>
                     <a href="#">Inicio</a>
+                    <a href="Guia-BAC-Conduccion-2026.html" target="_blank">Guía Legal 2026</a>
                     <a href="#">Contacto</a>
                     <a href="#">Sobre Nosotros</a>
                     <a href="#">Política de Privacidad</a>
