@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Alcohol: ¿Cuánto tarda en irse del cuerpo? - Herramienta Precisa</title>
-    <meta name="description" content="Utiliza nuestra Calculadora de Alcohol (BAC) gratuita y precisa. Descubre cuánto tarda en eliminarse el alcohol de tu cuerpo, entiende los límites legales y aprende sobre el metabolismo del alcohol.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+<title>Calculadora de Alcohol: ¿Cuánto tarda en irse del cuerpo? - Herramienta Precisa</title>
+<meta name="description"
+    content="Utiliza nuestra Calculadora de Alcohol (BAC) gratuita y precisa. Descubre cuánto tarda en eliminarse el alcohol de tu cuerpo, entiende los límites legales y aprende sobre el metabolismo del alcohol.">
+<meta name="robots" content="index, follow">
 
-    <!-- Structured Data for Rich Snippets (SoftwareApplication) -->
-    <script type="application/ld+json">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Favicon (SVG) -->
+<link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍺</text></svg>">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Structured Data for Rich Snippets (SoftwareApplication) -->
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
@@ -25,14 +26,14 @@
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "EUR"
       },
-      "description": "Herramienta online para estimar el nivel de alcohol en sangre (BAC) basado en el peso, género y bebidas consumidas."
+      "description": "Calculadora online gratuita para estimar el nivel de alcohol en sangre (BAC) y el tiempo de recuperación."
     }
     </script>
-    
-    <!-- Structured Data for FAQ -->
-    <script type="application/ld+json">
+
+<!-- Structured Data for FAQ -->
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -41,279 +42,298 @@
         "name": "¿Cuánto tarda en irse el alcohol del cuerpo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El alcohol se elimina a una tasa constante de aproximadamente 0.015% de BAC por hora, o unos 10-15mg/dl. Un hígado sano procesa aproximadamente una bebida estándar (una cerveza o una copa de vino) por hora."
+          "text": "El alcohol se elimina a una tasa constante de aproximadamente 0.015% de BAC por hora. Por ejemplo, una copa de vino tarda aproximadamente 1 hora y media en eliminarse completamente."
         }
       }, {
         "@type": "Question",
-        "name": "¿Beber café o ducharse baja el alcohol?",
+        "name": "¿Beber café ayuda a bajar el alcohol?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Ni el café, ni las duchas frías, ni hacer ejercicio aceleran el metabolismo del alcohol en el hígado. Solo el tiempo permite que tu cuerpo elimine el alcohol."
+          "text": "No. El café solo reduce la sensación de sueño, pero no acelera el metabolismo del hígado. Seguirás dando positivo en un control de alcoholemia."
         }
       }, {
         "@type": "Question",
-        "name": "¿Cuál es el límite legal para conducir?",
+        "name": "¿Cuál es el límite legal de alcoholemia en España?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Varía por país. En España es 0.5 g/l (0.25 mg/l en aire) para conductores generales. En Estados Unidos y Reino Unido suele ser 0.08% BAC. Revisa siempre la legislación local."
+          "text": "0.5 g/l en sangre (0.25 mg/l en aire) para conductores generales y 0.3 g/l (0.15 mg/l) para noveles y profesionales."
         }
       }]
     }
     </script>
 </head>
+
 <body>
 
-<header>
-    <div class="container nav-wrapper">
-        <a href="#" class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"></path><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
-            CuerpoSano <span style="font-weight:400; color:var(--text-secondary)">| CalcAlcohol</span>
-        </a>
-    </div>
-</header>
-
-<main>
-    <!-- Ad Space 1 -->
-    <div class="container">
-        <div class="ad-slot">
-            <span>Espacio Publicitario (Google AdSense)</span>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-6l-2 3h-4l-2-3H2"></path>
+                    <path
+                        d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                    </path>
+                </svg>
+                CuerpoSano <span style="font-weight:400; color:var(--text-secondary)">| CalcAlcohol</span>
+            </a>
         </div>
-    </div>
+    </header>
 
-    <section class="calculator-section">
+    <main>
+        <!-- Ad Space 1 -->
         <div class="container">
-            <h1>Calculadora de Alcohol: ¿Cuánto tarda en irse del cuerpo?</h1>
-            <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">
-                Utiliza nuestra herramienta basada en la fórmula Widmark para estimar tu nivel de alcohol en sangre y saber cuándo volverás a estar sobrio.
-            </p>
-
-            <div class="calculator-card">
-                <form id="bac-form">
-                    <!-- Sex -->
-                    <div class="form-group">
-                        <label>Sexo biológico</label>
-                        <div class="radio-group">
-                            <div class="radio-option">
-                                <input type="radio" id="male" name="gender" value="male" checked>
-                                <label for="male">Hombre</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" id="female" name="gender" value="female">
-                                <label for="female">Mujer</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Weight -->
-                    <div class="form-group">
-                        <label for="weight">Peso (kg)</label>
-                        <div class="input-wrapper">
-                            <input type="number" id="weight" placeholder="Ej. 75" min="30" max="200">
-                        </div>
-                    </div>
-
-                    <!-- Add Drinks -->
-                    <div class="form-group">
-                        <label>Añadir bebida</label>
-                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
-                            <select id="drink-type">
-                                <option value="beer">Cerveza (330ml, 5%)</option>
-                                <option value="wine">Vino (150ml, 12%)</option>
-                                <option value="spirit">Licor/Copa (45ml, 40%)</option>
-                                <option value="cocktail">Combinado (250ml, 7%)</option>
-                            </select>
-                            <input type="number" id="drink-qty" value="1" min="1" style="width: 80px;">
-                        </div>
-                        <button type="button" id="add-drink-btn" class="btn btn-secondary">Añadir</button>
-                    </div>
-
-                    <!-- List of Drinks -->
-                    <div id="drinks-list-container" class="drink-list"></div>
-
-                    <!-- Time Elapsed -->
-                    <div class="form-group">
-                        <label for="time">Tiempo transcurrido desde la primera copa (horas)</label>
-                        <div class="input-wrapper">
-                            <input type="number" id="time" value="0" min="0" step="0.5">
-                        </div>
-                    </div>
-
-                    <button type="button" id="calculate-btn" class="btn btn-primary">Calcular Nivel BAC</button>
-                </form>
-
-                <!-- Results -->
-                <div id="result-box" class="result-box">
-                    <div class="bac-value" id="bac-value">0.00%</div>
-                    <div class="time-to-sober" id="time-to-sober"></div>
-                    <h3 style="margin-top:0; text-align:center;" id="status-text"></h3>
-                    <div class="warnings">
-                        <strong>Advertencias:</strong>
-                        <ul id="warnings-list"></ul>
-                    </div>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #64748b;">
-                *Los resultados son estimaciones basadas en promedios estadísticos. No utilices esta herramienta para decidir si puedes conducir. Si has bebido, no conduzcas.
-            </p>
-        </div>
-    </section>
-
-    <!-- Content Sections -->
-    <section class="content-section">
-        <div class="container article-content">
-            
-            <h2>¿Cómo se calcula el alcohol en sangre?</h2>
-            <p>El cálculo del nivel de alcohol en sangre (BAC, por sus siglas en inglés <em>Blood Alcohol Content</em>) es un proceso biológico complejo que depende de múltiples variables. Nuestra <strong>calculadora de alcohol</strong> utiliza la <strong>Fórmula de Widmark</strong>, el estándar científico más aceptado para estimar la intoxicación etílica.</p>
-            <p>La fórmula tiene en cuenta principalmente la cantidad de alcohol puro ingerido, el peso corporal de la persona y un factor de distribución que varía según el sexo biológico (debido a las diferencias en la composición de agua corporal y grasa).</p>
-            
-            <div class="info-card">
-                <h4>La Fórmula de Widmark simplificada</h4>
-                <p><strong>BAC = [Alcohol (g) / (Peso (g) x r)] x 100 - (β x tiempo)</strong></p>
-                <ul>
-                    <li><strong>Alcohol:</strong> Gramos de etanol puro consumidos.</li>
-                    <li><strong>Peso:</strong> Masa corporal total.</li>
-                    <li><strong>r:</strong> Factor de distribución (0.68 para hombres, 0.55 para mujeres).</li>
-                    <li><strong>β:</strong> Tasa de eliminación metabólica (aprox 0.015% por hora).</li>
-                </ul>
-            </div>
-
-            <h3>Diferencias por Sexo y Peso</h3>
-            <p>El mismo vaso de vino no afecta igual a todas las personas. El peso es fundamental: a mayor masa corporal, mayor volumen de sangre y agua para diluir el alcohol, resultando en un BAC más bajo. Por otro lado, las mujeres tienden a tener un menor porcentaje de agua corporal y menos enzima deshidrogenasa en el estómago, lo que provoca que alcancen niveles de alcohol en sangre superiores a los de un hombre del mismo peso tras beber la misma cantidad.</p>
-
-            <h2>¿Cuánto tarda en eliminarse el alcohol del cuerpo?</h2>
-            <p>Esta es la pregunta más frecuente. La respuesta corta es: <strong>el hígado metaboliza el alcohol a una velocidad constante</strong>, independientemente de cuánto hayas bebido. Esta tasa es de aproximadamente 10 a 15 mg/dl (0.010 - 0.015%) por hora.</p>
-            <p>Para simplificar, se suele decir que el cuerpo elimina <strong>una unidad estándar de bebida por hora</strong>. Una unidad estándar equivale aproximadamente a:</p>
-            <ul>
-                <li>Una caña de cerveza (250-330ml).</li>
-                <li>Una copa pequeña de vino (100ml).</li>
-                <li>Un chupito de licor (30-40ml).</li>
-            </ul>
-            <p>Si has bebido 5 copas grandes, tu cuerpo tardará un mínimo de 5 a 7 horas en procesar completamente todo el alcohol, dependiendo de la graduación y el volumen.</p>
-
-            <!-- Ad Space 2 -->
             <div class="ad-slot">
                 <span>Espacio Publicitario (Google AdSense)</span>
             </div>
-
-            <h2>Mitos y Verdades sobre "Bajar la Borrachera"</h2>
-            <p>Existen innumerables remedios caseros que prometen eliminar el alcohol rápidamente para pasar un control de alcoholemia o sentirse mejor. La ciencia es clara al respecto: <strong>la mayoría son falsos</strong>.</p>
-
-            <h3>Mito 1: Beber café te pone sobrio</h3>
-            <p><strong>Falso.</strong> La cafeína es un estimulante que puede hacerte sentir más alerta y contrarrestar la somnolencia del alcohol, pero <strong>no reduce la concentración de alcohol en sangre</strong>. Estarás "borracho pero despierto", lo cual puede ser incluso más peligroso al conducir ya que tendrás una falsa sensación de control.</p>
-
-            <h3>Mito 2: Una ducha fría ayuda</h3>
-            <p><strong>Falso.</strong> El choque térmico puede despertarte momentáneamente, pero no acelera la función hepática. Tu hígado seguirá trabajando a su ritmo constante sin importar la temperatura del agua.</p>
-
-            <h3>Mito 3: Vomitar elimina el alcohol</h3>
-            <p><strong>Parcialmente cierto, pero limitado.</strong> Vomitar expulsa el alcohol que aún está en el estómago y no ha sido absorbido. Sin embargo, el alcohol se absorbe muy rápidamente (en 20-30 minutos pasa al torrente sanguíneo). Una vez que el alcohol está en la sangre, vomitar no reducirá tu BAC.</p>
-            
-            <h3>Mito 4: Comer mucho antes de dormir absorbe el alcohol</h3>
-            <p><strong>Falso.</strong> La comida en el estómago <em>antes</em> de beber ayuda a ralentizar la absorción (haciendo que el pico de embriaguez sea menor), pero comer <em>después</em> de haber bebido no "absorbe" el alcohol que ya está circulando por tus venas.</p>
-
-            <h2>Tabla Comparativa de Bebidas y Alcohol</h2>
-            <p>Es vital entender que no todas las bebidas son iguales. El ABV (Alcohol By Volume) determina la fuerza de la bebida.</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tipo de Bebida</th>
-                        <th>Volumen Típico</th>
-                        <th>Graduación (ABV)</th>
-                        <th>Alcohol Puro (aprox)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cerveza Rubia</td>
-                        <td>330 ml (Lata)</td>
-                        <td>4.5% - 5.5%</td>
-                        <td>~13g</td>
-                    </tr>
-                    <tr>
-                        <td>Cerveza Artesana / IPA</td>
-                        <td>330 ml</td>
-                        <td>6% - 9%</td>
-                        <td>~20g</td>
-                    </tr>
-                    <tr>
-                        <td>Vino Tinto/Blanco</td>
-                        <td>150 ml (Copa)</td>
-                        <td>11% - 14%</td>
-                        <td>~16g</td>
-                    </tr>
-                    <tr>
-                        <td>Vodka / Gin / Ron</td>
-                        <td>45 ml (Chupito)</td>
-                        <td>40%</td>
-                        <td>~14g</td>
-                    </tr>
-                    <tr>
-                        <td>Cubata / Combinado</td>
-                        <td>200-300 ml</td>
-                        <td>Variable</td>
-                        <td>~14g - 25g</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>Preguntas Frecuentes (FAQ)</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">¿Cuál es el límite de alcohol para conducir en España? <span style="float:right">+</span></div>
-                <div class="faq-answer">
-                    En España, el límite general es de <strong>0.5 g/l en sangre</strong> (0.25 mg/l en aire espirado). Para conductores noveles y profesionales, el límite es más estricto: 0.3 g/l en sangre (0.15 mg/l en aire).
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Cuánto tiempo debo esperar para conducir después de beber? <span style="float:right">+</span></div>
-                <div class="faq-answer">
-                    Como regla general, el cuerpo elimina 0.15 g/l de alcohol por hora. Si tienes un nivel de 1.0 g/l, tardarás aproximadamente 6-7 horas en estar completamente limpio. Sin embargo, para estar por debajo del límite legal, el tiempo puede ser menor, pero la recomendación de seguridad siempre es esperar hasta estar sobrio (cero alcohol).
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Afecta igual el alcohol a hombres y mujeres? <span style="float:right">+</span></div>
-                <div class="faq-answer">
-                    No. Fisiológicamente, las mujeres suelen tener menos agua corporal y menores niveles de la enzima alcohol deshidrogenasa, lo que resulta en una mayor concentración de alcohol en sangre para la misma cantidad bebida en comparación con un hombre del mismo peso.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">¿El alcoholimetro de la farmacia es fiable? <span style="float:right">+</span></div>
-                <div class="faq-answer">
-                    Los etilómetros desechables o de bajo coste pueden dar una referencia, pero suelen tener márgenes de error altos. No deben usarse como garantía legal para decidir si conducir o no.
-                </div>
-            </div>
-
         </div>
-    </section>
-</main>
 
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>CuerpoSano</h3>
-                <p>Tu guía de salud y bienestar responsable.</p>
+        <section class="calculator-section">
+            <div class="container">
+                <h1>Calculadora de Alcohol: ¿Cuánto tarda en irse del cuerpo?</h1>
+                <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">
+                    Utiliza nuestra herramienta basada en la fórmula Widmark para estimar tu nivel de alcohol en sangre
+                    y saber cuándo volverás a estar sobrio (0.0%).
+                </p>
+
+                <div class="calculator-card">
+                    <form id="bac-form">
+                        <!-- Sex -->
+                        <div class="form-group">
+                            <label>Sexo biológico</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="male" name="gender" value="male" checked>
+                                    <label for="male">Hombre</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Mujer</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Weight -->
+                        <div class="form-group">
+                            <label for="weight">Peso (kg)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="weight" placeholder="Ej. 75" min="30" max="200" required>
+                            </div>
+                        </div>
+
+                        <!-- Add Drinks -->
+                        <div class="form-group">
+                            <label>Añadir bebida</label>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <select id="drink-type">
+                                    <option value="beer">Cerveza (330ml, 5%)</option>
+                                    <option value="wine">Vino (150ml, 12%)</option>
+                                    <option value="spirit">Licor/Copa (45ml, 40%)</option>
+                                    <option value="cocktail">Combinado (250ml, 7%)</option>
+                                </select>
+                                <input type="number" id="drink-qty" value="1" min="1" max="20" style="width: 80px;">
+                            </div>
+                            <button type="button" id="add-drink-btn" class="btn btn-secondary">Añadir bebida 🍺</button>
+                        </div>
+
+                        <!-- List of Drinks -->
+                        <div id="drinks-list-container" class="drink-list"></div>
+
+                        <!-- Time Elapsed -->
+                        <div class="form-group">
+                            <label for="time">Tiempo transcurrido desde la primera copa (horas)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="time" value="0" min="0" max="48" step="0.5">
+                            </div>
+                        </div>
+
+                        <button type="button" id="calculate-btn" class="btn btn-primary">Calculadora BAC</button>
+                    </form>
+
+                    <!-- Results -->
+                    <div id="result-box" class="result-box">
+                        <div class="bac-value" id="bac-value">0.00%</div>
+                        <div class="time-to-sober" id="time-to-sober"></div>
+                        <h3 style="margin-top:0; text-align:center;" id="status-text"></h3>
+                        <div class="warnings">
+                            <strong>Advertencias de seguridad:</strong>
+                            <ul id="warnings-list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #64748b;">
+                    *Los resultados son estimaciones. El metabolismo real varía por persona. <strong>Si has bebido,
+                        NUNCA conduzcas.</strong>
+                </p>
             </div>
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <a href="#">Inicio</a>
-                <a href="#">Contacto</a>
-                <a href="#">Sobre Nosotros</a>
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Política de Cookies</a>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="content-section">
+            <div class="container article-content">
+
+                <h2>¿Cómo se calcula el nivel de alcohol en sangre (BAC)?</h2>
+                <p>El cálculo del nivel de alcohol en sangre (BAC, <em>Blood Alcohol Content</em>) depende de variables
+                    como el peso, el sexo y el tiempo. Nuestra <strong>calculadora de alcohol</strong> utiliza la
+                    <strong>Fórmula de Widmark</strong>, el estándar científico más aceptado.</p>
+                <p>Para aprender más sobre cómo funciona este proceso, puedes consultar nuestra sección de <a
+                        href="#faq" style="color:var(--primary-color);">Preguntas Frecuentes</a> más abajo.</p>
+
+                <div class="info-card">
+                    <h4>La Fórmula de Widmark explicada</h4>
+                    <p><strong>BAC = [Alcohol (g) / (Peso (g) x r)] x 100 - (β x tiempo)</strong></p>
+                    <ul>
+                        <li><strong>Alcohol:</strong> Gramos de etanol puro.</li>
+                        <li><strong>Peso:</strong> Masa corporal total.</li>
+                        <li><strong>r:</strong> Factor de distribución (0.68 hombres, 0.55 mujeres).</li>
+                        <li><strong>β:</strong> Tasa de eliminación metabólica (0.015% por hora).</li>
+                    </ul>
+                </div>
+
+                <h3>Diferencias metabólicas por Sexo y Peso</h3>
+                <p>El alcohol no afecta igual a todos. A mayor peso, más volumen de distribución. Las mujeres, al tener
+                    fisiológicamente menos agua corporal y enzimas específicas, suelen alcanzar un BAC mayor con la
+                    misma cantidad de alcohol.</p>
+
+                <h2>¿Cuánto tarda en eliminarse el alcohol del test de alcoholemia?</h2>
+                <p>El hígado elimina el alcohol a una velocidad constante de <strong>10 a 15 mg/dl por hora</strong>.
+                    Esto significa que ni dormir, ni beber agua aceleran el proceso. Solo el paso del tiempo reduce tu
+                    tasa de alcoholemia.</p>
+                <p>Por regla general, el cuerpo tarda <strong>1 hora en eliminar una Unidad de Bebida Estándar
+                        (UBE)</strong>, como una caña o una copa de vino.</p>
+
+                <!-- Ad Space 2 -->
+                <div class="ad-slot">
+                    <span>Espacio Publicitario (Google AdSense)</span>
+                </div>
+
+                <h2>Mitos y Verdades sobre cómo bajar la borrachera rápido</h2>
+                <p>¿Es posible engañar al alcoholímetro o bajar el alcohol más rápido? La respuesta científica es NO,
+                    pero analicemos los mitos más comunes:</p>
+
+                <h3>Mito 1: Beber café te pone sobrio</h3>
+                <p><strong>Falso.</strong> La cafeína te despierta, pero el alcohol sigue en tu sangre. Estarás
+                    "borracho pero despierto", una combinación peligrosa al volante.</p>
+
+                <h3>Mito 2: Una ducha fría</h3>
+                <p><strong>Falso.</strong> El choque térmico espabila, pero no acelera el hígado.</p>
+
+                <h3>Mito 3: Comer después de beber absorbe el alcohol</h3>
+                <p><strong>Falso.</strong> Comer ayuda <em>antes</em> de beber (ralentiza la absorción), pero no elimina
+                    el alcohol que ya está en la sangre.</p>
+
+                <h2>Tabla de Equivalencias de Alcohol por Bebida</h2>
+                <p>Conocer la cantidad de alcohol puro en cada bebida es clave para calcular tu BAC.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo de Bebida</th>
+                            <th>Volumen</th>
+                            <th>Graduación (ABV)</th>
+                            <th>Alcohol Puro (g)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cerveza Rubia</td>
+                            <td>330 ml (Lata)</td>
+                            <td>5%</td>
+                            <td>~13g</td>
+                        </tr>
+                        <tr>
+                            <td>Cerveza Artesana / Doble</td>
+                            <td>330 ml</td>
+                            <td>7% - 9%</td>
+                            <td>~20g</td>
+                        </tr>
+                        <tr>
+                            <td>Vino Tinto/Blanco</td>
+                            <td>150 ml (Copa)</td>
+                            <td>12% - 14%</td>
+                            <td>~16g</td>
+                        </tr>
+                        <tr>
+                            <td>Copa / Combinado</td>
+                            <td>50 ml licor + mix</td>
+                            <td>40%</td>
+                            <td>~16g</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2 id="faq">Preguntas Frecuentes (FAQ) sobre el Control de Alcoholemia</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuál es el límite para no dar positivo en un control? <span
+                            style="float:right">+</span></div>
+                    <div class="faq-answer">
+                        En España, el límite es <strong>0.25 mg/l en aire</strong> (0.5 g/l en sangre). Con dos
+                        cervezas, una persona de peso medio ya podría rozar o superar este límite.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuánto tiempo debo esperar para conducir? <span
+                            style="float:right">+</span></div>
+                    <div class="faq-answer">
+                        Si tienes un nivel de 1.0 g/l, necesitarás al menos 6-7 horas para eliminarlo por completo. La
+                        recomendación segura es: si bebes, no conduzcas hasta el día siguiente tras descansar.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Por qué las mujeres dan más positivo que los hombres? <span
+                            style="float:right">+</span></div>
+                    <div class="faq-answer">
+                        Debido a un menor volumen de agua corporal y menor concentración de la enzima alcohol
+                        deshidrogenasa en el estómago.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Funciona el alcoholímetro de farmacia? <span style="float:right">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Los test desechables dan una referencia aproximada, pero tienen margen de error. No te fíes al
+                        100% para decidir si coger el coche.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CuerpoSano</h3>
+                    <p>Tu guía de salud y bienestar responsable.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="#">Inicio</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Sobre Nosotros</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Política de Cookies</a>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p><strong>AVISO LEGAL Y DE RESPONSABILIDAD:</strong> Esta calculadora proporciona estimaciones basadas
+                    en promedios poblacionales. El metabolismo real varía significativamente entre individuos debido a
+                    genética, salud, alimentación y otros factores. El resultado NO constituye una prueba legal ni
+                    garantiza la capacidad para conducir u operar maquinaria. Los autores no se hacen responsables de
+                    las decisiones tomadas basándose en estos resultados. <strong>Si has bebido, no conduzcas.</strong>
+                </p>
+                <p>&copy; 2024 CalculadoraAlcohol. Todos los derechos reservados.</p>
             </div>
         </div>
-        <div class="disclaimer">
-            <p><strong>AVISO LEGAL Y DE RESPONSABILIDAD:</strong> Esta calculadora proporciona estimaciones basadas en promedios poblacionales. El metabolismo real varía significativamente entre individuos debido a genética, salud, alimentación y otros factores. El resultado NO constituye una prueba legal ni garantiza la capacidad para conducir u operar maquinaria. Los autores no se hacen responsables de las decisiones tomadas basándose en estos resultados. <strong>Si has bebido, no conduzcas.</strong></p>
-            <p>&copy; 2024 CalculadoraAlcohol. Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // State
     let drinks = [];
-    
+
     // DOM Elements
     const drinkTypeSelect = document.getElementById('drink-type');
     const drinkQtyInput = document.getElementById('drink-qty');
@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (qty > 0) {
             addDrink(typeKey, qty);
+        } else {
+            alert("La cantidad debe ser mayor que 0.");
         }
     });
 
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             div.className = 'drink-item';
             div.innerHTML = `
                 <span>${drink.qty}x ${drink.name}</span>
-                <button type="button" class="btn-icon" data-index="${index}" style="margin-left:auto; color:red; border:none; background:none; cursor:pointer;">✕</button>
+                <button type="button" class="btn-icon" data-index="${index}" style="margin-left:auto; color:red; border:none; background:none; cursor:pointer; font-size:1.2rem;">&times;</button>
             `;
             drinksListContainer.appendChild(div);
         });
@@ -72,7 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const hours = parseFloat(document.getElementById('time').value);
 
         if (!weight || weight <= 0) {
-            alert('Por favor, introduce un peso válido.');
+            alert('Por favor, introduce un peso válido mayor a 0 kg.');
+            return;
+        }
+
+        if (hours < 0) {
+            alert('El tiempo transcurrido no puede ser negativo.');
             return;
         }
 
@@ -93,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Actually Widmark is often stated as: A / (Wr). 
         // Usually: A (grams), W (kg). r (L/kg). Result is g/L (promille).
         // To get % (g/100ml), we divide by 10.
-        
+
         // Let's stick to standard % calculation:
         // BAC = [Alcohol(g) / (BodyWeight(g) * r)] * 100
         // weight in kg * 1000 = grams
@@ -113,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayResults(bac) {
         resultBox.style.display = 'block';
         resultBox.className = 'result-box'; // reset classes
-        
+
         // Format BAC to 3 or 4 decimals? Standard is usually 2 or 3.
         bacValueDisplay.textContent = bac.toFixed(3) + '%';
 
@@ -129,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const hours = Math.floor(timeToZero);
         const minutes = Math.round((timeToZero - hours) * 60);
-        
+
         if (timeToZero > 0) {
             timeToSoberDisplay.textContent = `Tiempo estimada para 0.00%: ${hours}h ${minutes}min`;
         } else {
@@ -170,9 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         statusTextDisplay.textContent = status;
-        
+
         warningsList.innerHTML = warnings.map(w => `<li>${w}</li>`).join('');
-        
+
         // Scroll to result
         resultBox.scrollIntoView({ behavior: 'smooth' });
     }
